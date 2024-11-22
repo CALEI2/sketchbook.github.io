@@ -1,0 +1,244 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 2em;
+    color: rgb(44, 65, 249);
+    font-weight: bold;
+}
+
+.navegador a {
+    text-decoration: none;
+    color: rgb(44, 65, 249);
+    margin: 0 15px;
+    padding: 8px 15px;
+    font-size: 1.1em;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navegador a:hover {
+    background-color: rgb(44, 65, 249);
+    color: white;
+    font-weight: bold;
+}
+
+body {
+    background: url('../IMGS/blorbos2.png');
+    background-size: cover;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.contenedor
+{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    gap: 10px;
+    padding: 10px;
+    max-width: 1050px;
+}
+
+section
+{
+    background: #202020;
+    border-radius: 7px;
+}
+
+.barra-herramientas
+{
+    width: 210px;
+    padding: 15px 22px 0;
+}
+
+.barra-herramientas .fila
+{
+    margin-bottom: 20px;
+}
+
+.fila .opciones
+{
+    list-style: none;
+    margin: 10px 0 0 5px;
+}
+
+.fila .opciones .opcion
+{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #3C363E;
+}
+
+.opcion:is(:hover, .active) img
+{
+    filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg) brightness(100%) contrast(100%);
+}
+
+.opcion :where(span, label)
+{
+    color: #fff;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.opcion:is(:hover, .active) :where(span, label)
+{
+    color: #4A98F7;
+}
+
+.opcion .rellenar-color
+{
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+}
+
+.rellenar-color:checked ~ label
+{
+    color: #4A98F7;
+}
+
+.opcion .slider-tamano
+{
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+}
+
+.color-picker {
+    border-radius: 20%; 
+    width: 20px;      
+    height: 20px;
+    border-color: #fff;
+    border-width: 2px;
+    cursor: pointer; 
+    background-color: transparent; 
+}
+
+.color-picker::-webkit-color-swatch {
+    border: none; 
+}
+
+.color-picker::-moz-color-swatch {
+    border: none; 
+}
+
+.botones button
+{
+   width: 100%;
+   color: #fff; 
+   border: none;
+   outline: none;
+   padding: 11px 0;
+   font-size: 0.9rem;
+   margin-bottom: 13px;
+   background: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.botones .limpiar-canvas
+{
+    color: #FFF;
+    border: 1px solid #FFF;
+    transition: all 0.3s ease;
+}
+
+.limpiar-canvas:hover
+{
+   color: #fff;
+   background: #5b595d; 
+}
+
+.botones .guardar-imagen
+{
+    background: #3C5DB6;
+    border: 1px solid #3C5DB6;
+}
+
+.guardar-imagen:hover
+{
+    background: #B6CDFF;
+    border: 1px solid #B6CDFF;
+    color: #202020;
+    font-weight: bold;
+}
+
+.contenedor_blorbo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.blorbo
+{
+    width: 150px;
+    height: 100%;
+}
+
+.canvas-drawing
+{
+   flex: 1; 
+}
+
+.canvas-drawing canvas
+{
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+.titulo
+{
+    color: #B6CDFF;
+    font-weight: bold;
+}
+
+.ancho{
+    color: #B6CDFF;
+    font-weight: bold;
+}
+
+.tools
+{
+    width: 10%;
+    height: 10%;
+}

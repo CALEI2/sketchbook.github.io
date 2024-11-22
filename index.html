@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="CSS/style1.css">
+</head>
+
+<body id="canvas">
+    <header>
+        <div>
+            <h2 class="logo">Sketchbook!</h2>
+        </div>    
+        <nav class="navegador">
+            <a class="paginas" href="index.html">CANVAS</a>
+            <a class="paginas" href="galería.html">GALERÍA</a>
+            <a class="paginas" href="login.html">SALIR</a>                
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <section class="barra-herramientas">
+                
+                <!--Figuras y herramienta de relleno-->
+                <div class="fila">
+                    <label class="titulo">Figuras</label>
+                    <ul class="opciones">
+                        <li class="opcion" id="rectangulo">
+                            <img src="IMGS/rectangle.svg" alt="Rectángulo" class="tools">
+                            <span>Rectángulo</span>
+                        </li>
+                        <li class="opcion" id="circulo">
+                            <img src="IMGS/circle.svg" alt="Círculo" class="tools">
+                            <span>Círculo</span>
+                        </li>
+                        <li class="opcion" id="triangulo">
+                            <img src="IMGS/triangle.svg" alt="Triángulo" class="tools">
+                            <span>Triángulo</span>
+                        </li>
+                        <li class="opcion">
+                            <input type="checkbox" class="rellenar-color" id="rellenar-color" class="tools">
+                            <label for="rellenar-color">Rellenar figura</label>
+                        </li>
+                        <li class="opcion" id="cubeta" class="tools">
+                            <img src="IMGS/cubeta.svg" width="10%" height="10%" alt="Cubeta">
+                            <span>Cubeta</span>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!--Pincel y borrador-->
+                <div class="fila">
+                    <label class="titulo">Opciones</label>
+                    <ul class="opciones">
+                        <li class="opcion" id="brushTool">
+                            <img src="IMGS/brush.svg" alt="Pincel" class="tools">
+                            <span>Pincel</span>
+                        </li>
+                        <li class="opcion" id="eraserTool">
+                            <img src="IMGS/eraser.svg" alt="Borrador" class="tools">
+                            <span>Borrador</span>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Slider del grosor -->
+                <div class="fila">
+                    <label class="ancho" for="lineWidthSlider">Ancho de la línea:</label>
+                    <input type="range" id="lineWidthSlider" min="1" max="20" value="5">
+                </div>
+    
+                <!-- Opción de color -->
+                <div class="fila colores">
+                    <label class="titulo">Color</label>
+                    <ul class="opciones">
+                        <li class="opcion">
+                            <input type="color" class="color-picker" id="colorPicker" value="#000000">
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Botones -->
+                <div class="fila botones">
+                    <button class="limpiar-canvas" id="limpiar-canvas">Limpiar Canvas</button>
+                    <button class="guardar-imagen" id="guardar-imagen">Guardar Imagen</button>
+                </div>
+
+                <div class="contenedor_blorbo">
+                    <img src="IMGS/Hat_Guy_Stckr.png" alt="blorbo" class="blorbo">
+                </div>
+            </section>
+            
+            <!-- Canvas :D -->
+            <section class="canvas-drawing">
+                <canvas id="photo-canvas"></canvas>
+            </section>
+        </div>
+
+        <script src="./JS/script.js"></script>
+    </main>
+</body>
+</html>

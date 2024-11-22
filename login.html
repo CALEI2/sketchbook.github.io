@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css">
+    <title>Iniciar sesión</title>
+</head>
+
+<body>
+    <div class="contenedor" id="contenedor">
+        <h1>Iniciar sesión</h1>
+        <form id="formulario">
+            <input type="email" placeholder="Correo" id="correo" required>
+            <input type="password" placeholder="Contraseña" id="contrasena" required>
+            <div class="textoBienvenida">
+                <a href="#">¡Bienvenido a tu Sketchbook!</a>
+            </div>
+            <button type="submit" id="btn-iniciarSesion">Iniciar sesión</button>
+        </form>
+
+        <div class="miembro" id="miembro">
+            ¿No te has registrado? <a href="signup.html">Regístrate aquí</a>
+        </div>
+    </div>
+
+    <script type="module">
+        import { login } from './JS/siglog.js';
+    
+        // Listener del formulario para manejar el evento submit-->
+        document.getElementById('formulario').addEventListener('submit', async (e) => {
+            e.preventDefault(); 
+
+            // Obtiene los valores de los campos-->
+            const email = document.getElementById('correo').value.trim();
+            const password = document.getElementById('contrasena').value.trim();
+
+            // Validaciones adicionales-->
+            if (!email || !password) {
+                alert('Por favor, complete todos los campos.');
+                return;
+            }
+
+            if (!/^[a-zA-Z0-9._-]{2,}@[a-zA-Z]{2,}\.[a-zA-Z]{2,}$/.test(email)) {
+                alert('Por favor, ingrese un correo válido.');
+                return;
+            }
+
+            try {
+                // Intentar iniciar sesión con Firebase-->
+                await login(email, password);
+
+                // Si el inicio de sesión es exitoso, redirigir al inicio-->
+                window.location.href = 'index.html';
+            } catch (error) {
+                // Manejar errores comunes de Firebase-->
+                    alert('El correo o contraseña son incorrectos. '); 
+            }
+        });
+    </script>
+</body>
+</html>

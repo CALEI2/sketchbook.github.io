@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 17.1 16.3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path id="bx-eraser" class="cls-1" d="M.5,12l4,4c.2.2.4.3.7.3h11.1v-1.9h-6.4l6.7-6.7c.7-.7.7-1.9,0-2.6L12,.5c-.7-.7-1.9-.7-2.6,0l-4.4,4.4L.5,9.4c-.7.7-.7,1.9,0,2.6h0ZM10.6,1.9l4.6,4.6-2.4,2.4-4.6-4.6,2.4-2.4h0ZM6.3,6.3l.7-.7,4.6,4.6-4.2,4.2s0,0,0,0h-1.7l-3.7-3.7,4.4-4.5h0Z"/>
+</svg>

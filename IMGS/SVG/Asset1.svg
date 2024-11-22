@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2069.64 1034.82">
+  <defs>
+    <style>
+    </style>
+    <image id="image" width="1500" height="1500" xlink:href="C:\Users\PC FACTOR BLACK\Downloads\Navia_Stckr.png"/>
+    <image id="image-2" width="1500" height="1500" xlink:href="C:\Users\PC FACTOR BLACK\Downloads\KAZUHASTKR.png"/>
+    <image id="image-3" width="1500" height="1500" xlink:href="C:\Users\PC FACTOR BLACK\Downloads\Lyney_Stckr.png"/>
+    <image id="image-4" width="1500" height="1500" xlink:href="C:\Users\PC FACTOR BLACK\Downloads\Hat_Guy_Stckr.png"/>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <g>
+          <use transform="scale(.17)" xlink:href="#image-2"/>
+          <use transform="matrix(0,0,0,0,402.18,139.99)" xlink:href="#image-3"/>
+          <use transform="translate(258.7) scale(.17)" xlink:href="#image"/>
+          <use transform="translate(517.41) scale(.17)" xlink:href="#image-4"/>
+          <use transform="translate(776.11) scale(.17)" xlink:href="#image-3"/>
+        </g>
+        <g>
+          <use transform="translate(0 258.7) scale(.17)" xlink:href="#image-2"/>
+          <use transform="matrix(0,0,0,0,402.18,398.69)" xlink:href="#image-3"/>
+          <use transform="translate(258.7 258.7) scale(.17)" xlink:href="#image"/>
+          <use transform="translate(517.41 258.7) scale(.17)" xlink:href="#image-4"/>
+          <use transform="translate(776.11 258.7) scale(.17)" xlink:href="#image-3"/>
+        </g>
+        <g>
+          <use transform="translate(0 517.41) scale(.17)" xlink:href="#image-2"/>
+          <use transform="matrix(0,0,0,0,402.18,657.4)" xlink:href="#image-3"/>
+          <use transform="translate(258.7 517.41) scale(.17)" xlink:href="#image"/>
+          <use transform="translate(517.41 517.41) scale(.17)" xlink:href="#image-4"/>
+          <use transform="translate(776.11 517.41) scale(.17)" xlink:href="#image-3"/>
+        </g>
+        <g>
+          <use transform="translate(0 776.11) scale(.17)" xlink:href="#image-2"/>
+          <use transform="matrix(0,0,0,0,402.18,916.1)" xlink:href="#image-3"/>
+          <use transform="translate(258.7 776.11) scale(.17)" xlink:href="#image"/>
+          <use transform="translate(517.41 776.11) scale(.17)" xlink:href="#image-4"/>
+          <use transform="translate(776.11 776.11) scale(.17)" xlink:href="#image-3"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use transform="translate(1034.82) scale(.17)" xlink:href="#image-2"/>
+          <use transform="matrix(0,0,0,0,1437,139.99)" xlink:href="#image-3"/>
+          <use transform="translate(1293.52) scale(.17)" xlink:href="#image"/>
+          <use transform="translate(1552.23) scale(.17)" xlink:href="#image-4"/>
+          <use transform="translate(1810.93) scale(.17)" xlink:href="#image-3"/>
+        </g>
+        <g>
+          <use transform="translate(1034.82 258.7) scale(.17)" xlink:href="#image-2"/>
+          <use transform="matrix(0,0,0,0,1437,398.69)" xlink:href="#image-3"/>
+          <use transform="translate(1293.52 258.7) scale(.17)" xlink:href="#image"/>
+          <use transform="translate(1552.23 258.7) scale(.17)" xlink:href="#image-4"/>
+          <use transform="translate(1810.93 258.7) scale(.17)" xlink:href="#image-3"/>
+        </g>
+        <g>
+          <use transform="translate(1034.82 517.41) scale(.17)" xlink:href="#image-2"/>
+          <use transform="matrix(0,0,0,0,1437,657.4)" xlink:href="#image-3"/>
+          <use transform="translate(1293.52 517.41) scale(.17)" xlink:href="#image"/>
+          <use transform="translate(1552.23 517.41) scale(.17)" xlink:href="#image-4"/>
+          <use transform="translate(1810.93 517.41) scale(.17)" xlink:href="#image-3"/>
+        </g>
+        <g>
+          <use transform="translate(1034.82 776.11) scale(.17)" xlink:href="#image-2"/>
+          <use transform="matrix(0,0,0,0,1437,916.1)" xlink:href="#image-3"/>
+          <use transform="translate(1293.52 776.11) scale(.17)" xlink:href="#image"/>
+          <use transform="translate(1552.23 776.11) scale(.17)" xlink:href="#image-4"/>
+          <use transform="translate(1810.93 776.11) scale(.17)" xlink:href="#image-3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

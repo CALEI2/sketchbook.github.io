@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="CSS/style2.css">
+</head>
+
+<body id="galeria">
+    <header>
+        <div>
+            <h2 class="logo">Sketchbook!</h2>
+        </div>    
+        <nav class="navegador">
+            <a class="paginas" href="index.html">CANVAS</a>
+            <a class="paginas" href="galería.html">GALERÍA</a>
+            <a class="paginas" href="login.html">SALIR</a>                  
+        </nav>
+    </header>
+
+    <main>
+        <!-- Galería -->
+        <section class="gallery">
+            <h1 class="gallery-title">Galería</h1>
+            <div id="photo-gallery">
+                <!-- Fotos guardadas -->
+            </div>
+            <label class="upload-label" for="upload-photo">Subir Foto</label>
+            <label class="upload-label" id="eliminar-todas">Borrar Fotos</label>
+            <input type="file" id="upload-photo" class="boton" accept="image/*">
+        </section>
+    
+        <!-- Editor de fotos/dibujos -->
+        <section class="editor">
+            <h2>Editor de Fotos</h2>
+            <canvas class="photo-canvas" id="photo-canvas"></canvas>
+            
+            <!-- Filtros -->
+            <div class="editor-tools">
+                <div class="filter">
+                    <label for="brightness">Brillo</label>
+                    <input type="range" id="brightness" name="brightness" class="filter-slider" min="0" max="200" value="100">
+                </div>
+                <div class="filter">
+                    <label for="contrast">Contraste</label>
+                    <input type="range" id="contrast" name="contrast" class="filter-slider" min="0" max="200" value="100">
+                </div>
+                <div class="filter">
+                    <label for="saturation">Saturación</label>
+                    <input type="range" id="saturation" name="saturation" class="filter-slider" min="0" max="200" value="100">
+                </div>
+                <div class="filter">
+                    <label for="blur">Desenfoque</label>
+                    <input type="range" id="blur" name="blur" class="filter-slider" min="0" max="20" value="0">
+                </div>
+            </div>
+            <button id="guardar-imagen" class="save-button">Guardar Foto</button>
+        </section>
+
+        <script src="./JS/script.js"></script>
+    </main>
+</body>
+</html>

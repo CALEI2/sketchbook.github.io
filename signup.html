@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/signup.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <div class="contenedor" id="contenedor">
+        <h1>Registro</h1>
+        <form id="formulario">
+            <input type="email" placeholder="Correo" id="correo" required>
+            <input type="password" placeholder="Contraseña" id="contrasena" required>
+            <input type="password" placeholder="Repita contraseña" id="contrasena2" required>
+        </form>
+
+        <div class="terminos" id="terminos">
+            <input type="checkbox" id="checkbox" required>
+            <label for="checkbox"><a href="#">Acepto los términos y condiciones.</a></label>
+        </div>
+
+        <button id="btn-registro">Registrarse</button>
+        
+        <div class="miembro" id="miembro">
+            ¿Ya eres miembro? <a href="login.html">Inicia sesión aquí</a>
+        </div>
+    </div>
+    
+    <script type="module">
+        import { signup } from './JS/siglog.js';
+
+        function validarCorreo(correo) {
+            const regex = /^[a-zA-Z0-9._-]{2,}@[a-zA-Z]{2,}\.[a-zA-Z]{2,}$/;
+            return regex.test(correo);
+        }
+
+        document.getElementById('btn-registro').addEventListener('click', async (e) => {
+            e.preventDefault();
+
+            const correo = document.getElementById('correo').value;
+            const contrasena = document.getElementById('contrasena').value;
+            const contrasena2 = document.getElementById('contrasena2').value;
+            const checkbox = document.getElementById('checkbox').checked;
+
+            try {
+                // Validación adicional antes de intentar iniciar sesión
+                if (!validarCorreo(correo)) {
+                    alert('Ingrese un correo válido');
+                    return;
+                }
+
+                if (contrasena.length < 6) {
+                    alert('Ingrese una contraseña con más de 5 caracteres');
+                    return;
+                }
+
+                if (contrasena !== contrasena2) {
+                    alert('Las contraseñas no coinciden');
+                    return;
+                }
+
+                if (!checkbox) {
+                    alert('Debes aceptar los términos y condiciones');
+                    return;
+                }
+
+                await signup(correo, contrasena);
+
+                alert('¡Te has registrado correctamente! En unos segundos serás redirigido al inicio de sesión.');
+
+                setTimeout(() => {
+                    window.location.href = 'login.html';
+                    document.getElementById('formulario').reset();
+                }, 2000);
+                
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        });
+
+        // Código para manejar el "back/forward cache"
+        window.addEventListener('pageshow', (event) => {
+            if (event.persisted) {
+                window.location.reload();
+            }
+        });
+    </script>
+</body>
+</html>
